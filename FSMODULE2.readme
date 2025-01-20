@@ -1,0 +1,94 @@
+Directory operations in Node JS FS Module
+
+1.Creating a Directory
+
+// New Directory
+const fs = require('fs');
+
+//Asynchronous method
+
+// fs.mkdir('newDir',(err)=>{
+//     if(err)throw err;
+//     console.log("New Directory is Created");
+// });
+
+
+// Synchronous method
+
+// fs.mkdirSync("DirUssingSyncMethod");
+
+
+//Create a new file name for example
+fs.writeFileSync("./newDir/hello.txt","helllooooo guysssss")
+console.log("File is Created");
+
+
+
+
+
+2.Reading a Directory
+const fs = require('fs');
+
+//Asynchronous method
+
+// fs.readdir('./newDir',(err,files)=>{
+//     if(err)throw err;
+//     console.log("Files");
+// });
+
+
+// Synchronous method
+
+const Files=fs.readdirSync("./newDir");
+console.log(Files);
+console.log("Folder is readed Successfuly");
+
+
+
+
+
+
+
+3.Deleting a Directory
+
+
+const fs = require('fs');
+
+// remove directory -> rmdir
+//Asynchronous method
+
+// fs.rmdir('./newDir',(err,files)=>{
+//     if(err)throw err;
+//     console.log("Directory is Removed");
+// });
+
+//delete directory with file remove us for example
+// fs.unlinkSync('./newDir',(err,files)=>{
+//     if(err)throw err;
+//     console.log("Directory is Removed");
+// });
+
+
+// Synchronous method
+
+// fs.rmdirSync("./DirUssingSyncMethod");
+// console.log("Directory is Removed");
+
+//delete directory with file remove us for example
+fs.unlinkSync("./DirUssingSyncMethod");
+console.log("Directory is Removed");
+
+
+
+
+
+
+
+4.Checking a Directory
+
+5.Rename a Directory
+
+// Synchronous method
+
+fs.renameSync("./newfolder","newdirectory");
+console.log("Directory name is Changed");

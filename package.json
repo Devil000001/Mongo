@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "inndex.js",
+  "scripts": {
+    "start": "node match_method.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "mongodb+srv://devkadawla66:QNrOhnMeDQMM8Ich@cluster0.ke2og.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  },
+  "keywords": []
+}
